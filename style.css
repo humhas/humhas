@@ -1,0 +1,157 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+body.loaded {
+  transition-delay: 1s;
+  transition: ease-in 5s;
+  background-color: #b8c594;
+}
+
+body.postAnimation svg {
+  /* display: none !important; */
+  z-index: -1;
+}
+
+svg {
+  overflow: visible;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+svg g rect {
+  transition: 1s;
+}
+
+svg g path {
+  transition: 1s;
+}
+
+#cover.open {
+  opacity: 0%;
+}
+
+svg.loaded g #cover.open {
+  opacity: 100%;
+}
+
+svg.loaded g line {
+  opacity: 0;
+  transition: 1s;
+}
+
+svg.loaded {
+  width: 76vh;
+  height: 100vh;
+  opacity: 0;
+  transition: 5s;
+}
+
+svg g rect {
+  transition: 1s;
+}
+
+svg.loaded g #cover {
+  transform-origin: left;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+svg.loaded g #page1 {
+  transform-origin: left;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  opacity: 100%;
+  transition-delay: 0.15s;
+}
+
+svg.loaded g #coveropen {
+  transform-origin: left;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  opacity: 100%;
+}
+
+#container {
+  opacity: 0%;
+  z-index: 1;
+}
+
+#container img{
+  opacity: 0%;
+}
+
+body.postAnimation #container {
+  background-image: url('./assets/background1575.png');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  opacity: 100%;
+  transition: all 0s;
+  transition: opacity 0.75s;  
+  display: flex;
+  justify-content:center;
+}
+
+body.postAnimation #container img{
+  opacity: 100%;
+}
+
+#arch{
+  width:80vw;
+  height:70vh;
+  transition: opacity 4s;
+  transition-delay: 0.25s;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  bottom: 200px;
+}
+
+#us {
+  width: 90vw;
+  height: 37vh;
+  transition: opacity 4s;
+  transition-delay: 1.25s;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 110px;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+  svg.loaded {
+    width: 50vw;
+    height: 132vw;
+    opacity: 0;
+    transition: 5s;
+  }
+
+  #arch{
+    width: 35vw;
+    height: 95vh;
+    position: inherit;
+  }
+
+  #us {
+    width: 20vw;
+    height: 34vh;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: 70px;
+  }
+}
