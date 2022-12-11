@@ -119,11 +119,24 @@ body.postAnimation #container img{
   translate: -50%;
 }
 
+#savethedate{
+  position:absolute;
+  top:40vh;
+  width: 38vw;
+  transition: 2s;
+  left: 50%;
+  translate: -50%;
+}
+
+body.postAnimation #container #savethedate{
+  top:0;
+}
+
 #arch{
   width:80vw;
   height:70vh;
   transition: opacity 4s;
-  transition-delay: 0.25s;
+  transition-delay: 3.25s;
   position: absolute;
   bottom: 200px;
 }
@@ -132,7 +145,7 @@ body.postAnimation #container img{
   width: 90vw;
   height: 37vh;
   transition: opacity 4s;
-  transition-delay: 1.25s;
+  transition-delay: 4.25s;
   position: absolute;
   bottom: 110px;
 }
@@ -140,13 +153,7 @@ body.postAnimation #container img{
 #names {
   width: 12vw;
   transition: opacity 4s;
-  transition-delay: 1.25s;
-}
-
-#savethedate{
-  width: 12vw;
-  transition: opacity 4s;
-  transition-delay: 0.35s;
+  transition-delay: 4.25s;
 }
 
 
@@ -165,6 +172,21 @@ body.postAnimation #container img{
     transition: 5s;
   }
 
+  #savethedate{
+    position:absolute;
+    top:40vh;
+    width: 38vw;
+    transition: 4s;
+    transition-timing-function: cubic-bezier(1,0,0,1.04);
+    transition-delay: 0s;
+    left: 50%;
+    translate: -50%;
+  }
+  
+  body.postAnimation #container #savethedate{
+    top:0;
+  }
+
   #arch{
     width: 38vw;
     height: 95vh;
@@ -181,10 +203,5 @@ body.postAnimation #container img{
   #names {
     width: 12vw;
     top:28vh
-  }
-
-  #savethedate {
-    width:30vw;
-    top:2vh;
   }
 }

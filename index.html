@@ -25,6 +25,12 @@
             .getElementsByTagName('body')[0]
             .classList.add('postAnimation');
         }, timeout+2750);
+
+        setTimeout(() => {
+          document
+            .getElementById('savethedate').remove()
+            
+        }, timeout+2750+4000);
       };
     </script>
   </head>
@@ -90,6 +96,7 @@
     <div display="none" id="container">
       <div>
         <img id="arch" src="./assets/archwtext.png" />
+        <img id='savethedate' src="./assets/Save the date.png">
         <img id="us" src="./assets/bench&us.png" />
         <img id="names" src="./assets/humna&haseeb.png" />
       </div>
