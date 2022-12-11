@@ -61,6 +61,14 @@ svg g rect {
   transition: 1s;
 }
 
+svg.loaded #humarihaseenkahani {
+  transition: transform 1.25s, opacity 0.5s;
+  transform-origin: left;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  opacity: 0;
+}
+
 svg.loaded g #cover {
   transform-origin: left;
   transform: rotateY(180deg);
@@ -106,6 +114,9 @@ body.postAnimation #container {
 
 body.postAnimation #container img{
   opacity: 100%;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
 }
 
 #arch{
@@ -114,8 +125,6 @@ body.postAnimation #container img{
   transition: opacity 4s;
   transition-delay: 0.25s;
   position: absolute;
-  left: 0;
-  width: 100vw;
   bottom: 200px;
 }
 
@@ -125,14 +134,30 @@ body.postAnimation #container img{
   transition: opacity 4s;
   transition-delay: 1.25s;
   position: absolute;
-  left: 50%;
-  translate: -50%;
   bottom: 110px;
 }
 
+#names {
+  width: 12vw;
+  transition: opacity 4s;
+  transition-delay: 1.25s;
+}
+
+#savethedate{
+  width: 12vw;
+  transition: opacity 4s;
+  transition-delay: 0.35s;
+}
 
 
 @media only screen and (min-width: 700px) {
+  body.postAnimation #container img{
+    opacity: 100%;
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+  }
+
   svg.loaded {
     width: 50vw;
     height: 132vw;
@@ -141,17 +166,25 @@ body.postAnimation #container img{
   }
 
   #arch{
-    width: 35vw;
+    width: 38vw;
     height: 95vh;
-    position: inherit;
+    bottom: 5vh;
   }
 
   #us {
     width: 20vw;
     height: 34vh;
     position: absolute;
-    left: 50%;
-    translate: -50%;
-    bottom: 70px;
+    bottom: 6vh;
+  }
+
+  #names {
+    width: 12vw;
+    top:28vh
+  }
+
+  #savethedate {
+    width:30vw;
+    top:2vh;
   }
 }
