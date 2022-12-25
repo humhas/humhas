@@ -122,42 +122,50 @@ body.postAnimation #container img{
 #savethedate{
   position:absolute;
   top:40vh;
-  width: 38vw;
+  width: 90vw;
   transition: 2s;
   left: 50%;
   translate: -50%;
 }
 
 body.postAnimation #container #savethedate{
-  top:0;
+  top:100px;
 }
 
 #arch{
-  width:80vw;
-  height:70vh;
+  width: 105vw;
+  height: 80vh;
   transition: opacity 4s;
   transition-delay: 3.25s;
   position: absolute;
-  bottom: 200px;
+  top:50vh;
+  translate: -50% -50% !important;
 }
 
 #us {
-  width: 90vw;
-  height: 37vh;
+  width: 80vw;
   transition: opacity 4s;
   transition-delay: 4.25s;
   position: absolute;
-  bottom: 110px;
+  bottom: 5vh;
 }
 
 #names {
-  width: 12vw;
+  width: 40vw;
+  top: 37vh;
+  transition: opacity 4s;
+  transition-delay: 4.25s;
+}
+
+#date{
+  height: 12vh;
+  top: 59.5vh;
   transition: opacity 4s;
   transition-delay: 4.25s;
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 500px) {
   body.postAnimation #container img{
     opacity: 100%;
     position: absolute;
@@ -184,7 +192,7 @@ body.postAnimation #container #savethedate{
   }
   
   body.postAnimation #container #savethedate{
-    top:0;
+    top:20px;
   }
 
   #arch{
@@ -203,5 +211,10 @@ body.postAnimation #container #savethedate{
   #names {
     width: 12vw;
     top:28vh
+  }
+
+  #date{
+    height: 100px;
+    top: 52.5vh;
   }
 }
