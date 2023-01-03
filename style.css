@@ -122,14 +122,16 @@ body.postAnimation #container img{
 #savethedate{
   position:absolute;
   top:40vh;
-  width: 90vw;
+  width: 105vw;
+  height: 80vh;
   transition: 2s;
   left: 50%;
   translate: -50%;
 }
 
 body.postAnimation #container #savethedate{
-  top:100px;
+  top:50vh;
+  translate: -50% -50% !important;
 }
 
 #arch{
@@ -182,8 +184,9 @@ body.postAnimation #container #savethedate{
 
   #savethedate{
     position:absolute;
-    top:40vh;
+    bottom:40vh;
     width: 38vw;
+    height: 95vh;
     transition: 4s;
     transition-timing-function: cubic-bezier(1,0,0,1.04);
     transition-delay: 0s;
@@ -192,13 +195,15 @@ body.postAnimation #container #savethedate{
   }
   
   body.postAnimation #container #savethedate{
-    top:20px;
+    top:50vh;
+    translate: -50% -50% !important;
   }
 
   #arch{
     width: 38vw;
     height: 95vh;
-    bottom: 5vh;
+    top:50vh;
+    translate: -50% -50% !important;
   }
 
   #us {
