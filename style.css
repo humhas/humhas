@@ -167,6 +167,39 @@ body.postAnimation #container #savethedate{
 }
 
 
+#RSVPbutton{
+  opacity:0;
+  width: 10vw;
+  height: 40px;
+  box-shadow: none;
+  border: none;
+  background: #c45e38;
+  color: white;
+  font-family: Lato;
+  letter-spacing: 1px;
+  bottom: 270px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50% !important;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#RSVPbutton:hover{
+  color: #c45e38;
+  border: #fff 3px solid;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+#RSVPbutton.loaded{
+  opacity:100;
+  transition: opacity 4s;
+  transition-delay: 4.25s;
+
+}
+
+
 @media only screen and (min-width: 500px) {
   body.postAnimation #container img{
     opacity: 100%;
@@ -221,5 +254,12 @@ body.postAnimation #container #savethedate{
   #date{
     height: 100px;
     top: 52.5vh;
+  }
+
+  #RSVPbutton{
+    width: 10vw;
+    height: 40px;
+    bottom: 270px;
+    position: absolute;
   }
 }

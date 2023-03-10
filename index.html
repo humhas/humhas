@@ -32,11 +32,15 @@
             .classList.add('postAnimation');
         }, timeout+2750);
 
-        setTimeout(() => {
-          document
-            .getElementById('savethedate').remove()
+        // setTimeout(() => {
+        //   document
+        //     .getElementById('savethedate').remove()
             
-        }, timeout+7250);
+        // }, timeout+7250);
+
+        setTimeout(() => {
+          document.getElementById('RSVPbutton').classList.add('loaded')
+        }, timeout+2750)
       };
     </script>
   </head>
@@ -101,11 +105,12 @@
 
     <div display="none" id="container">
       <div>
-        <img id="arch" src="./assets/archwtext.png" />
-        <img id='savethedate' src="./assets/Save the date.png">
+        <img id="arch" src="./assets/archonly.png" />
+        <img id='savethedate' src="./assets/rsvptext.png">
         <img id="us" src="./assets/bench&us.png" />
         <img id="names" src="./assets/humna&haseeb.png" />
-        <img id="date" src="./assets/date.png" />
+        <!-- <img id="date" src="./assets/date.png" /> -->
+        <form action="https://withjoy.com/haseeb-and-humna/rsvp"><button id="RSVPbutton">RSVP Form</button></form>
       </div>
     </div>
   </body>
