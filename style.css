@@ -168,6 +168,7 @@ body.postAnimation #container #savethedate{
 
 
 #RSVPbutton{
+  transition: 120ms linear;
   opacity:0;
   width: 30vw;
   height: 40px;
