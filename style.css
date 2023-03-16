@@ -138,7 +138,7 @@ body.postAnimation #container #savethedate{
   width: 110vw;
   height: 90vh;
   transition: opacity 4s;
-  transition-delay: 3.25s;
+  transition-delay: 0.75s;
   position: absolute;
   top:50vh;
   translate: -50% -50% !important;
@@ -147,7 +147,7 @@ body.postAnimation #container #savethedate{
 #us {
   width: 80vw;
   transition: opacity 4s;
-  transition-delay: 4.25s;
+  transition-delay: 1.25s;
   position: absolute;
   bottom: 5vh;
 }
@@ -156,29 +156,29 @@ body.postAnimation #container #savethedate{
   width: 40vw;
   top: 36vh;
   transition: opacity 4s;
-  transition-delay: 4.25s;
+  transition-delay: 1.25s;
 }
 
 #date{
   height: 12vh;
   top: 59.5vh;
   transition: opacity 4s;
-  transition-delay: 4.25s;
+  transition-delay: 1.25s;
 }
 
 
 #RSVPbutton{
   transition: 120ms linear;
   opacity:0;
-  width: 30vw;
-  height: 40px;
+  width: 36vw;
+  height: 5vh;
   box-shadow: none;
   border: none;
   background: #c45e38;
   color: white;
   font-family: Lato;
   letter-spacing: 1px;
-  top: 57vh;
+  top: 58vh;
   position: absolute;
   left: 50%;
   translate: -50% -50% !important;
@@ -196,7 +196,7 @@ body.postAnimation #container #savethedate{
 #RSVPbutton.loaded{
   opacity:100;
   transition: opacity 4s;
-  transition-delay: 4.25s;
+  transition-delay: 1.25s;
 
 }
 
@@ -259,7 +259,7 @@ body.postAnimation #container #savethedate{
 
   #RSVPbutton{
     width: 10vw;
-    height: 40px;
+    height: 5vh;
     top: 55vh;
     position: absolute;
   }

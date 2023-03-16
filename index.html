@@ -17,7 +17,7 @@
     <link rel="preload" as="image" href="important.png">
     <script>
       window.onload = () => {
-        let timeout = 1250
+        let timeout = 0
 
         setTimeout(() => {
           document.getElementById('cover').classList.add('loaded');
@@ -30,7 +30,7 @@
           document
             .getElementsByTagName('body')[0]
             .classList.add('postAnimation');
-        }, timeout+2750);
+        }, timeout+750);
 
         // setTimeout(() => {
         //   document
@@ -40,7 +40,7 @@
 
         setTimeout(() => {
           document.getElementById('RSVPbutton').classList.add('loaded')
-        }, timeout+2750)
+        }, timeout+750)
       };
     </script>
   </head>
